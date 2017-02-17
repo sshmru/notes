@@ -1,3 +1,6 @@
+Dot product:
+Apply the directional growth of one vector to another. The result is how much stronger we've made the original (positive, negative, or zero).
+
 dot(X, Y) = X.x * Y.x + X.y * Y.y;
 
 dot(X, Y) = abs(X.x - X.y) * abs(Y.x - Y.y) * cos(angle);
