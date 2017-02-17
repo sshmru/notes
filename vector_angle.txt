@@ -1,0 +1,3 @@
+angleToX = atan2(vector.y, vector.x);
+so angle between vectors
+angle = atan2(vector2.y, vector2.x) - atan2(vector1.y, vector1.x);
