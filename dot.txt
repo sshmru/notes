@@ -4,3 +4,20 @@ Apply the directional growth of one vector to another. The result is how much st
 dot(X, Y) = X.x * Y.x + X.y * Y.y;
 
 dot(X, Y) = abs(X.x - X.y) * abs(Y.x - Y.y) * cos(angle);
+
+//https://www.cs.uaf.edu/2012/spring/cs481/section/0/lecture/01_19_basics.html
+Dot product: compute the "similarity" of two vectors
+  A dot B = A.x*B.x + A.y*B.y + A.z*B.z
+  For unit vectors, A dot B is the cosine of the angle between A and B.  
+    You can figure this out if you write down the dot product of two unit 2D vectors: A=(1,0) lying along the x axis, B=(cos theta, sin theta) in polar coordinates.  Then A dot B = cos theta.
+  For unit vectors, A dot B is:
+    1 if A and B lie in the same direction (angle=0)
+    0 if A and B are orthogonal (angle=90)
+    -1 if A and B lie in the opposite directions (angle=180)
+  For any vector, A dot A is the square of A's length.  For a unit vector, A dot A is 1.
+  In general, A dot B = length(A) * length(B) * cos(angle between A and B)
+  Dot product is commutative: A dot B = B dot A
+  Dot product distributes like multiplication: A dot (B + C) = A dot B + A dot C
+  Dot product is friendly with scalars: c*(A dot B) = (c*A) dot B = A dot (c*B)
+  "A dot B" is the math notation.  In code you usually write "float f = dot(A,B);".
+  Dot product is very handy in computer graphics for lighting: for surface normal N and light direction L, "float light = dot(N,L);".
