@@ -1,0 +1,2 @@
+x' = x * cos(angle) - y * sin(angle);
+y' = x * sin(angle) - y * cos(angle);
