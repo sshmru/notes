@@ -1,3 +1,6 @@
+//https://thebookofshaders.com/06/
+//https://thebookofshaders.com/edit.php#06/easing.frag
+
 #ifdef GL_ES
 precision mediump float;
 #endif
