@@ -16,6 +16,13 @@ float squareWave(float x){
     float height = 0.1;
     return  base + step(interspace, cos(x*10.))*height;
 }
+float gearWave(float x){
+    float base = 0.5;
+    float interspace = -.5;
+    float height = 0.1;
+    return  base + smoothstep(interspace,1.,   cos(x*10.))*height;
+}
+
 
 
 triangle curved bottom (u-wave)
