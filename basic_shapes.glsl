@@ -30,5 +30,9 @@ float rect(vec2 uv, vec4 rect){
     return hv.x * hv.y;	
 }
 
-	float shape = circle(uv, 0.5);
-	float shape2 = rect(uv, vec4(0.0, 0.0, 0.5, 0.5));
+
+//N equal faces
+int N=7;
+float a=atan(c.x,c.y)+.2;
+float b=6.28319/float(N);
+f=vec4(vec3(smoothstep(.5,.51, cos(floor(.5+a/b)*b-a)*length(c.xy))),1.);
