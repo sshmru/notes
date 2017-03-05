@@ -10,6 +10,14 @@ y = abs((x++ % period) - max);
 square
 y = (x++ % period) < max ? max : min;
 
+float squareWave(float x){
+    float base = 0.5;
+    float interspace = -.5;
+    float height = 0.1;
+    return  base + step(interspace, cos(x*10.))*height;
+}
+
+
 triangle curved bottom (u-wave)
 y = pow(abs((x++ % 6) - 3), 2.0);
 
