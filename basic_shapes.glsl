@@ -36,3 +36,9 @@ int N=7;
 float a=atan(c.x,c.y)+.2;
 float b=6.28319/float(N);
 f=vec4(vec3(smoothstep(.5,.51, cos(floor(.5+a/b)*b-a)*length(c.xy))),1.);
+
+
+float cross(in vec2 _st, float _size){
+    return  box(_st, vec2(_size,_size/4.)) + 
+            box(_st, vec2(_size/4.,_size));
+}
